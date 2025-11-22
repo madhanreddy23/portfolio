@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Message Received | Realm of Madanmohan</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    .thank-container {
+      text-align: center;
+      margin-top: 120px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .thank-icon {
+      font-size: 52px;
+      margin-bottom: 18px;
+      filter: drop-shadow(0 0 10px rgba(250,204,21,0.8));
+    }
+
+    .thank-title {
+      font-family: "Cinzel", serif;
+      font-size: 32px;
+      letter-spacing: 0.12em;
+      margin-bottom: 12px;
+      color: #facc15;
+      text-transform: uppercase;
+    }
+
+    .thank-text {
+      font-size: 16px;
+      max-width: 480px;
+      margin: 10px auto 36px;
+      color: #dbeafe;
+      line-height: 1.6;
+    }
+
+    .thank-back-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, #FACC15, #FB923C);
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 25px rgba(250,204,21,0.45);
+      transition: 0.25s ease;
+    }
+
+    .thank-back-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 32px rgba(250,204,21,0.9);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-logo">🛡️🦅</div>
+      <div class="brand-text">
+        <h1 class="brand-name">Kothapalli Madanmohan Reddy</h1>
+        <p class="brand-sub">AI & ML Engineer | NLP, GenAI & Data Science</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page">
+  <div class="thank-container">
+    <div class="thank-icon">🎉</div>
+    <h1 class="thank-title">Thank You!</h1>
+    <p class="thank-text">
+      Your message has been successfully sent. I will get back to you soon. 🚀
+    </p>
+
+    <a href="index.html" class="thank-back-btn">⬅ Back to Home</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  © <span id="year"></span> Kothapalli Madanmohan Reddy · Realm of Data & AI
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  setTimeout(() => { window.location.href = "index.html"; }, 6000);
+</script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Smooth fade transition before redirect
+  function smoothRedirect() {
+    document.body.style.transition = "opacity 0.8s ease";
+    document.body.style.opacity = "0";
+
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 850);
+  }
+
+  // Auto redirect with animation
+  setTimeout(smoothRedirect, 6000);
+
+  // Make button also animate + redirect
+  document.querySelector(".thank-back-btn").addEventListener("click", function(e) {
+    e.preventDefault();
+    smoothRedirect();
+  });
+</script>
+
+
+</body>
+</html>
