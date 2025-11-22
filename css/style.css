@@ -1198,3 +1198,13 @@ a {
     font-size: 17px;
   }
 }
+.research-badge {
+  background: #facc15;
+  color: #000;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
