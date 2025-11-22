@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <!-- ⭐ IMPORTANT: FIXES MOBILE RESPONSIVENESS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>About | Realm of Madanmohan</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,6 +20,7 @@
         <p class="brand-sub">AI & ML Engineer | NLP, GenAI & Data Science</p>
       </div>
     </div>
+
     <nav class="main-nav">
       <a href="index.html" class="nav-link">Home</a>
       <a href="about.html" class="nav-link active">About</a>
@@ -33,7 +38,7 @@
   <h2 class="section-title">📜 Hall of Chronicles</h2>
   <p class="section-subtitle">A timeline of education, internships, experience and my journey into AI.</p>
 
-  <!-- ===== Career Objective ===== -->
+  <!-- Career Objective -->
   <section class="section-block">
     <h3>🎯 Career Objective</h3>
     <p>
@@ -42,7 +47,7 @@
     </p>
   </section>
 
-  <!-- ===== Education ===== -->
+  <!-- Education -->
   <section class="section-block">
     <h3>🎓 Education</h3>
     <ul class="timeline">
@@ -64,7 +69,7 @@
     </ul>
   </section>
 
-  <!-- ===== Internships ===== -->
+  <!-- Internships -->
   <section class="section-block">
     <h3>💼 Internships</h3>
     <ul class="timeline">
@@ -86,33 +91,25 @@
       </li>
     </ul>
   </section>
+
+  <!-- Research -->
   <section class="section-block">
-  <h3>📖 Published Research</h3>
+    <h3>📖 Published Research</h3>
 
-  <p><strong>Smart-Agro: Enhancing Crop Management with AgriBot</strong></p>
+    <p><strong>Smart-Agro: Enhancing Crop Management with AgriBot</strong></p>
 
-  <span style="
-    background:#facc15;
-    color:#000;
-    padding:4px 10px;
-    border-radius:6px;
-    font-size:12px;
-    display:inline-block;
-    margin-bottom:8px;">
-    📌 Published at ICECAPS’24 — IRO Journal
-  </span>
+    <span class="research-badge">📌 Published at ICECAPS’24 — IRO Journal</span>
 
-  <p>
-    Research paper demonstrating IoT-enabled smart agriculture automation using robotics,
-    soil sensing and intelligent irrigation.
-  </p>
+    <p>
+      Research paper demonstrating IoT-enabled smart agriculture automation using robotics,
+      soil sensing and intelligent irrigation.
+    </p>
 
-  <a href="https://irojournals.com/iroismac/article/view/6/3/2" target="_blank" class="clean-link">
-    🔗 View Publication
-</a>
+    <a href="https://irojournals.com/iroismac/article/view/6/3/2" target="_blank" class="clean-link">
+      🔗 View Publication
+    </a>
 
-</section>
-
+  </section>
 
 </main>
 
@@ -124,7 +121,6 @@
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
-<!-- 🔊 Realm Audio Toggle Added (Same as Home) -->
 <audio id="realmAudio" loop>
   <source src="assets/music/realm-theme.mp3" type="audio/mpeg">
 </audio>
@@ -135,5 +131,6 @@
 </button>
 
 <script src="js/main.js"></script>
+
 </body>
 </html>
